@@ -1,0 +1,13 @@
+# Kullanıcı Rehberi (User Guide)
+
+Bu doküman, Linux Package Auditing Tool aracının nasıl kullanılacağını anlatır.
+
+## Gereksinimler
+- Python 3.8 veya üzeri
+- `requirements.txt` içindeki kütüphaneler
+
+## Nasıl Çalıştırılır?
+Terminal üzerinden proje dizinine gelin ve şu komutu çalıştırın:
+
+```bash
+python src/main.py
