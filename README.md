@@ -1,21 +1,30 @@
-MIT License
+# 🛡️ Linux Package Manager & Auditor (LPMA)
 
-Copyright (c) 2026 Ahmet Arda Sezer
+![Version](https://img.shields.io/badge/version-1.1.1-blue)
+![Python](https://img.shields.io/badge/python-3.x-yellow)
+![Status](https://img.shields.io/badge/status-stable-green)
+![License](https://img.shields.io/badge/license-MIT-orange)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+**LPMA**, sistem yöneticileri ve DevOps mühendisleri için geliştirilmiş, Linux paketlerini tarayan, CVE zafiyetlerini analiz eden ve otomatik onarım (patching) sağlayan gelişmiş bir simülasyon aracıdır.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## 🚀 Özellikler
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- **🔍 Akıllı Tarama:** Sistemdeki paketleri (`dpkg`/`rpm` simülasyonu) tarar.
+- **🛡️ Risk Analizi:** Yerel CVE veritabanı ile sürümleri karşılaştırır (`CRITICAL`, `WARN`, `SAFE`).
+- **🛠️ Auto-Fix (Otomatik Onarım):** Zafiyetli paketleri tespit eder, güncel sürümü indirir ve kurar.
+- **📊 Loglama:** Tüm güncelleme işlemlerini `install_history.log` dosyasına JSON formatında kaydeder.
+- **🎨 Görsel Arayüz:** Renkli terminal çıktıları ile kolay okunabilirlik sağlar.
+
+## 📂 Proje Yapısı
+
+```bash
+package-auditing-tool/
+├── .github/workflows/    # CI/CD Pipeline (GitHub Actions)
+├── docs/                 # Kullanım dokümantasyonu
+├── specs/                # Proje teknik özellikleri (JSON)
+├── src/                  # Kaynak kodlar (Opsiyonel)
+├── tests/                # Unit test senaryoları
+├── main.py               # Ana uygulama dosyası
+├── run.sh                # Linux başlatma scripti
+├── requirements.txt      # Kütüphane bağımlılıkları
+└── install_history.log   # Kurulum kayıtları
