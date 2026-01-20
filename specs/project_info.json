@@ -1,1 +1,17 @@
-
+{
+    "projectName": "Linux Package Manager & Auditor (LPMA)",
+    "category": "SecOps",
+    "author": "Ahmet Arda Sezer",
+    "version": "1.1.1",
+    "description": "Automated package vulnerability scanner and patch manager.",
+    "features": [
+        "CVE Analysis",
+        "Auto-Fix & Patching",
+        "Logging",
+        "Offline Simulation Mode"
+    ],
+    "requirements": {
+        "os": "Linux (Debian/Ubuntu)",
+        "language": "Python 3.8+"
+    }
+}
