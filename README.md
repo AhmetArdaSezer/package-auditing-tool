@@ -1,4 +1,4 @@
-# 🛡️ LPMA: Linux Package Manager & Auditor
+# 🛡️ LPMA: Package Manager & Auditor
 
 ![Version](https://img.shields.io/badge/version-1.1.1-blue)
 ![Python](https://img.shields.io/badge/python-3.x-yellow)
@@ -6,7 +6,7 @@
 
 ## 📖 Proje Hakkında
 
-**LPMA (Linux Package Manager & Auditor)**, Linux sistemlerindeki yazılım paketlerinin güvenliğini sağlamak amacıyla geliştirilmiş bir otomasyon ve simülasyon aracıdır.
+**LPMA (Package Manager & Auditor)**, sistemlerdeki yazılım paketlerinin güvenliğini sağlamak amacıyla geliştirilmiş bir otomasyon ve simülasyon aracıdır.
 
 Bu proje, sistemde yüklü olan paketleri (örneğin Python, OpenSSL, Vim) tarayarak yerel bir **CVE (Common Vulnerabilities and Exposures)** veritabanı ile karşılaştırır. Eski ve güvenlik açığı barındıran sürümleri tespit ettiğinde, kullanıcıya durumu raporlar ve tek tuşla **otomatik onarım (Auto-Fix)** imkanı sunar.
 
@@ -33,9 +33,7 @@ Projeyi çalıştırmak için işletim sisteminize uygun komutu kullanabilirsini
 **Linux / macOS için:**
 ```bash
 bash run.sh
-**Windows için**
-
-Bash
-
+**Windows için:**
+```bash
 pip install -r requirements.txt
 python main.py
