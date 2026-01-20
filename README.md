@@ -33,7 +33,7 @@ Projeyi çalıştırmak için işletim sisteminize uygun komutu kullanabilirsini
 **Linux / macOS için:**
 ```bash
 bash run.sh
-Windows için:
+**Windows için**
 
 Bash
 
