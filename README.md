@@ -33,3 +33,9 @@ Projeyi çalıştırmak için işletim sisteminize uygun komutu kullanabilirsini
 **Linux / macOS için:**
 ```bash
 bash run.sh
+Windows için:
+
+Bash
+
+pip install -r requirements.txt
+python main.py
